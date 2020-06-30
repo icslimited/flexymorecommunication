@@ -71,24 +71,11 @@ if($_SERVER['HTTP_HOST'] == 'localhost')
           $d = 'Grupo';
           $_SESSION['email'] = $dk[0];
           $_SESSION['baseX'] = $dk[1];
-
-          //print_r($_SESSION['email']);
-          // $_SESSION[$d.'usrdev'] = ip().ip('dev');
-
-          // $GLOBALS["logged"] = 1;
-          // $_SESSION[$d.'usrdev'] = ip().ip('dev');
-          // $_SESSION[$d.'usrcode'] = md5($session->id);
           
           if(isset($userMgt['id']))
           {
             $session = json_decode($userMgt['session'],true);
             $_SESSION['vouser'] = $session;
-            //session_destroy();
-            
-
-
-
-            //print_r($_SESSION['vouser']);
           }
        }
     }  
