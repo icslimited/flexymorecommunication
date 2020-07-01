@@ -23,7 +23,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost')
         PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         PDO::ATTR_EMULATE_PREPARES   => false,
-        PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
+        PDO::MYSQL_ATTR_SSL_CA => '/grupo/BaltimoreCyberTrustRoot.crt.pem'
         //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
     ];
    }
@@ -49,7 +49,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost')
   	$d = base64_decode($_GET['dx']);
     $uniqueID1 = explode(":",$d)[0];
     $uniqueID2 = explode(":", $d)[1];
-
+    //echo $uniqueID1;
 
   	$stmt = $pdo->prepare("SELECT * FROM managelogin WHERE uniqueID=:uniqueID");
     $stmt->execute(['uniqueID' => $uniqueID1]); 
@@ -65,17 +65,18 @@ if($_SERVER['HTTP_HOST'] == 'localhost')
     {
        $session = json_decode($mlog['session'],true);
        $decrypted = DecryptThis($session['baseX']);
+       
        $dk = explode(":", $decrypted);
        if(count($dk) > 0)
        {
           $d = 'Grupo';
           $_SESSION['email'] = $dk[0];
           $_SESSION['baseX'] = $dk[1];
-          
           if(isset($userMgt['id']))
           {
             $session = json_decode($userMgt['session'],true);
             $_SESSION['vouser'] = $session;
+            header("Location: grupo");
           }
        }
     }  

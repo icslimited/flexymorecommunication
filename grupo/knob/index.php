@@ -1,4 +1,5 @@
 <?php //if(!defined('s7V9pz')) {die();}?><?php
+include "../env.php";
 fc('grupo');
 $usr = $GLOBALS["user"];
 $loadgroup = '';
@@ -112,7 +113,7 @@ if (isset($_SESSION['grviewgroup']) && !empty($_SESSION['grviewgroup'])) {
                                             <!--li class='ajx switchmode' data-act=1 data-do='profile' data-type='mode'><?php gr_profile('mode'); ?></li-->
                                             <li class='standby'><?php gec($GLOBALS["lang"]['stand_by']); ?></li>
                                             <!--li class='ajx' data-act=1 data-do='logout'><?php gec($GLOBALS["lang"]['logout']) ?></li-->
-                                            <li data-act=1 data-do='logout'><a style="text-decoration: none;color: #fff" href = "../../virtualoffice/dashboard.php">Virtual Office</a></li>
+                                            <li data-act=1 data-do='logout'><a style="text-decoration: none;color: #fff" href = "<?=$siteUrlUserMgt?>">Virtual Office</a></li>
                                         </ul>
                                     </div>
                                 </i>
