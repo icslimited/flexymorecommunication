@@ -1,6 +1,6 @@
 <?php
   
-  if($_SERVER['HTTP_HOST'] == 'localhost')
+  if($_SERVER['HTTP_HOST'] != 'localhost')
   {
       $siteUrlChat = 'http://localhost/communication';
       $siteUrlmktplace = 'http://localhost/marketplaceapp';

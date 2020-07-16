@@ -16,7 +16,7 @@ function dbc($db, $out = 0) {
             }else {
                 $options = array(
                 PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
-                //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
+                 //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/communication/grupo/BalimoreCyberTrustRoot.crt.pem'
                 );
             }
             
@@ -52,7 +52,7 @@ function db($m = "db,do,tb,set-wc,stval-whval,ad") {
             }else {
                 $options = array(
                 PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
-                //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
+                //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/communication/grupo/BalimoreCyberTrustRoot.crt.pem'
                 );
             }
             
@@ -67,8 +67,8 @@ function db($m = "db,do,tb,set-wc,stval-whval,ad") {
                 );
             }else {
                 $options = array(
-                PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
-                //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
+                PDO::MYSQL_ATTR_SSL_CA => './BatimoreCyberTrustRoot.crt.pem'
+                //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/communication/grupo/BalimoreCyberTrustRoot.crt.pem'
                 );
             }
             
@@ -78,13 +78,13 @@ function db($m = "db,do,tb,set-wc,stval-whval,ad") {
                  if($_SERVER['HTTP_HOST'] == 'localhost')
                 {
                     $options = array(
-                    //PDO::MYSQL_ATTR_SSL_CA => '../../BaltimoreCyberTrustRoot.crt.pem'
+                    //PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
                     //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
                     );
                 }else {
                     $options = array(
                     PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
-                    //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
+                    //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/communication/grupo/BalimoreCyberTrustRoot.crt.pem'
                     );
                 }
             
