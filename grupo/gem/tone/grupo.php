@@ -7,7 +7,7 @@ width: 100%;
 
 body
 {
-background: url(gem/ore/grupo/global/bg.jpg);
+background: url(gem/ore/grupo/global/chat.jpg);
 background-size: cover;
 background-position: center;
 overflow-x: hidden;

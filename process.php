@@ -44,7 +44,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost')
     catch(PDOException $e){
         exit ("Error:".$e->getMessage());
     }
-  if(isset($_GET['dx']) && !isset($_SESSION['email']))
+  if(isset($_GET['dx']))
   {
   	$d = base64_decode($_GET['dx']);
     $uniqueID1 = explode(":",$d)[0];
@@ -111,7 +111,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost')
     }
   }
 
-  header("Location: grupo");
+  //header("Location: grupo");
 
 
 ?>

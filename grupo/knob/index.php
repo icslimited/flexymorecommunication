@@ -273,9 +273,9 @@ if (isset($_SESSION['grviewgroup']) && !empty($_SESSION['grviewgroup'])) {
                                     <div class="welcome">
                                         <span>
                                             <img src="<?php gec(mf("grupo/global/welcome.png")); ?>" />
-                                            <i class="title"><?php gec(gr_lang('get', 'welcome_user')) ?></i>
-                                            <i class="desc"><?php gec(gr_lang('get', 'welcome_msg')) ?></i>
-                                            <i class="foot"><?php gec(gr_lang('get', 'welcome_footer')) ?></i>
+                                            <i class="title">What is on your Mind?</i>
+                                            <!--i class="desc"><?php gec(gr_lang('get', 'welcome_msg')) ?></i-->
+                                            <!--i class="foot"><?php gec(gr_lang('get', 'welcome_footer')) ?></i-->
                                         </span>
                                     </div>
                                 </div>

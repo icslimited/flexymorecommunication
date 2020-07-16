@@ -1,6 +1,5 @@
 <?php 
-print_r(phpinfo());
-exit();
+
 ?>
 <!DOCTYPE html>
 <html>

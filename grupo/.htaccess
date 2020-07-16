@@ -34,6 +34,8 @@ satisfy all
  </filesMatch>
 </ifModule>
 
+
+
 <IfModule mod_deflate.c>
  AddOutputFilterByType DEFLATE application/javascript
  AddOutputFilterByType DEFLATE application/rss+xml
@@ -57,6 +59,7 @@ satisfy all
  AddOutputFilterByType DEFLATE text/plain
  AddOutputFilterByType DEFLATE text/xml
 </IfModule>
+
 
 <IfModule mod_gzip.c>
 mod_gzip_on Yes
