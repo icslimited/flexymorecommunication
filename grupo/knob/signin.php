@@ -2,10 +2,10 @@
 session_start();
 
 //print_r($_SESSION['email']);
-if(!$_SESSION['vouser'])
-{
-   header("Location: ../index.php");
-}
+// if(!$_SESSION['vouser'])
+// {
+//    header("Location: ../index.php");
+// }
 //print_r(phpinfo());
 //exit();
 fc('grupo');
@@ -44,7 +44,7 @@ grupofns();
         }
     </style>
 </head>
-<body class="sign two bgone hide">
+<body class="sign two bgone">
     <?php gr_core('hf', 'header'); ?>
     <div class="gr-lselect">
         <?php pr(gr_lang('list', 2)) ?>
