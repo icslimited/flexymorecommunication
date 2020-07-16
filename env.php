@@ -6,6 +6,7 @@
       $siteUrlmktplace = 'http://localhost/marketplaceapp';
       $siteUrlteamWork = 'http://localhost/teamworkapp';
       $siteUrlUserMgt = 'http://localhost/online/virtualoffice/dashboard';
+      $baseurl = 'http://localhost/online';
   }
   else 
   {

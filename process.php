@@ -23,7 +23,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost')
         PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         PDO::ATTR_EMULATE_PREPARES   => false,
-        PDO::MYSQL_ATTR_SSL_CA => '/grupo/BaltimoreCyberTrustRoot.crt.pem'
+        PDO::MYSQL_ATTR_SSL_CA => './grupo/BaltimoreCyberTrustRoot.crt.pem'
         //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
     ];
    }
