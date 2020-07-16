@@ -1,4 +1,6 @@
 <?php //if(!defined('s7V9pz')) {die();}?><?php
+print_r(phpinfo());
+exit();
 include "../env.php";
 fc('grupo');
 $usr = $GLOBALS["user"];
