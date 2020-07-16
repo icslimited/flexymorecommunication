@@ -44,7 +44,7 @@ grupofns();
         }
     </style>
 </head>
-<body class="sign two bgone">
+<body class="sign two bgone hide">
     <?php gr_core('hf', 'header'); ?>
     <div class="gr-lselect">
         <?php pr(gr_lang('list', 2)) ?>

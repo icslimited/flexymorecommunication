@@ -1,6 +1,6 @@
 <?php
   
-  if($_SERVER['HTTP_HOST'] != 'localhost')
+  if($_SERVER['HTTP_HOST'] == 'localhost')
   {
       $siteUrlChat = 'http://localhost/communication';
       $siteUrlmktplace = 'http://localhost/marketplaceapp';
@@ -9,9 +9,10 @@
   }
   else 
   {
-      $siteUrlChat = 'https://chatplace.azurewebsites.net';
+      $siteUrlChat = 'https://flexychat.azurewebsites.net';
       $siteUrlmktplace = 'https://sellerplaceapp.azurewebsites.net';
       $siteUrlteamWork = 'https://teamworkapp.azurewebsites.net';
       $siteUrlUserMgt = 'http://flexymore.com/virtualoffice/dashboard';
+      $baseurl = 'http://flexymore.com';
   }
 ?>
