@@ -1,5 +1,5 @@
-php_flag output_buffering On
-php_value output_buffering 4096
+#php_flag output_buffering On
+#php_value output_buffering 4096
 
 Options -Indexes
 
