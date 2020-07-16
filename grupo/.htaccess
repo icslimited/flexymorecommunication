@@ -1,8 +1,7 @@
 Options -Indexes
 
-
-#RewriteCond %{HTTP_HOST} !=localhost
-php_value output_buffering On
+RewriteCond %{HTTP_HOST} !=localhost
+#php_flag output_buffering On
 php_value output_buffering 4096
 
 
@@ -35,8 +34,6 @@ satisfy all
  </filesMatch>
 </ifModule>
 
-
-
 <IfModule mod_deflate.c>
  AddOutputFilterByType DEFLATE application/javascript
  AddOutputFilterByType DEFLATE application/rss+xml
@@ -60,7 +57,6 @@ satisfy all
  AddOutputFilterByType DEFLATE text/plain
  AddOutputFilterByType DEFLATE text/xml
 </IfModule>
-
 
 <IfModule mod_gzip.c>
 mod_gzip_on Yes
