@@ -15,7 +15,7 @@ function dbc($db, $out = 0) {
                 );
             }else {
                 $options = array(
-                PDO::MYSQL_ATTR_SSL_CA => '../../BaltimoreCyberTrustRoot.crt.pem'
+                PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
                 //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
                 );
             }
@@ -51,7 +51,7 @@ function db($m = "db,do,tb,set-wc,stval-whval,ad") {
                 );
             }else {
                 $options = array(
-                PDO::MYSQL_ATTR_SSL_CA => '../../BaltimoreCyberTrustRoot.crt.pem'
+                PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
                 //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
                 );
             }
@@ -67,7 +67,7 @@ function db($m = "db,do,tb,set-wc,stval-whval,ad") {
                 );
             }else {
                 $options = array(
-                PDO::MYSQL_ATTR_SSL_CA => '../../BaltimoreCyberTrustRoot.crt.pem'
+                PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
                 //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
                 );
             }
@@ -83,7 +83,7 @@ function db($m = "db,do,tb,set-wc,stval-whval,ad") {
                     );
                 }else {
                     $options = array(
-                    PDO::MYSQL_ATTR_SSL_CA => '../../BaltimoreCyberTrustRoot.crt.pem'
+                    PDO::MYSQL_ATTR_SSL_CA => './BaltimoreCyberTrustRoot.crt.pem'
                     //PDO::MYSQL_ATTR_SSL_CA => 'C:/xampp/htdocs/online/BaltimoreCyberTrustRoot.crt.pem'
                     );
                 }
