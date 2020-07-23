@@ -1,13 +1,15 @@
 <?php if(!defined('s7V9pz')) {die();}?><?php
+require_once("../env.php");
 session_start();
 
+
 //print_r($_SESSION['email']);
-// if(!$_SESSION['vouser'])
-// {
-//    header("Location: ../index.php");
-// }
-//print_r(phpinfo());
-//exit();
+if(!isset($_SESSION['email']) || !isset($_SESSION['baseX']))
+{
+   header("Location: $baseurl");
+   exit();
+}
+
 fc('grupo');
 //echo $GLOBALS["lang"]['email_username'];
 if ($GLOBALS["logged"]) {
